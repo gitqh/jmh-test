@@ -61,6 +61,16 @@ THE POSSIBILITY OF SUCH DAMAGE.
             <version>${jmh.version}</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf-4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
     </dependencies>
 
     <properties>
@@ -68,6 +78,8 @@ THE POSSIBILITY OF SUCH DAMAGE.
         <jmh.version>1.4.1</jmh.version>
         <javac.target>1.6</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
+        <slf-4j.version>1.7.25</slf-4j.version>
+        <logback.version>1.2.3</logback.version>
     </properties>
 
     <build>
